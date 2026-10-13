@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SUT Config Suite File">
+
+    <!--<suite name="Sherwin Williams Chrome Suite" verbose="0" parallel="none"-->
+    <!--thread-count="3" configfailurepolicy="continue" preserve-order="true">-->
+
+<!--    <listeners>-->
+<!--        <listener class-name="listeners.ReportListner"/>-->
+<!--    </listeners>-->
+
+    <!--<test name="DBTest">-->
+    <!--<classes><class name="testcases.DataBaseTesting"></class></classes>-->
+    <!--</test>-->
+    <!--<test name="Base Test"  parallel="none"  group-by-instances="true">-->
+    <test name="Base Test">
+        <parameter name="browser" value="chrome"/>
+
+        <classes>
+            <class name="testCases.Initializer"/>
+<!--            <class name="testcases.Login"/>-->
+
+
+        </classes>
+    </test>
+</suite>
+
